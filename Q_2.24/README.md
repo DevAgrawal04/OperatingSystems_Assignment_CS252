@@ -1,4 +1,4 @@
-# Problem 2.24
+# Problem 2.24: Tracing System Calls
 
 ### Problem Statement
 In Section 2.3 (Sytsem Calls), we described a program that copies the contents of one file
