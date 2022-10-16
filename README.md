@@ -3,7 +3,7 @@ This repository contains solutions of Problem 2.24 and 4.25 from the textbook **
 - Name: Dev Agrawal 
 - Roll No: 201ME169
 
-## [Problem 2.24: Tracing System Calls](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/edit/main/Q_2.24/README.md)
+## [Problem 2.24: Tracing System Calls](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_2.24)
 
 ### Problem Statement
 In Section 2.3 (Sytsem Calls), we described a program that copies the contents of one file
@@ -24,7 +24,7 @@ sudo dtruss ./FileCopy
 Since Windows systems do not provide such a tool, you will have to
 trace through the Windows version of this program using a debugger.
 
-## [Problem 4.25: Estimating the value of π](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/edit/main/Q_4.25/README.md)
+## [Problem 4.25: Estimating the value of π](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_4.25)
 
 ### Problem Statement
 An interesting way of calculating π is to use a technique known as **Monte
