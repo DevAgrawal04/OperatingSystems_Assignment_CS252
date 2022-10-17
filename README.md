@@ -57,7 +57,7 @@ greater the number of points, the closer the approximation to π.
 
 
 ## _References_
-1. [How to measure time taken by a function in C? by Hackerrank](https://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/)
+1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md)
 2. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp)
 3. [Senior's Github Repo](https://github.com/sankronaldo/CS-252-OS-Assignment)
 _Add permission mail from senior_
