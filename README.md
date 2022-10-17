@@ -1,12 +1,12 @@
-# CS252 OS Assignment
+# CS252 Operating Systems Assignment
 This repository contains solutions of Problem 2.24 and 4.25 from the textbook **Operating System Concepts 10th Edition** by _Abraham Silberschatz, Peter Baer Galvin and Greg Gagne_. 
 - Name: Dev Agrawal 
 - Roll No: 201ME169
-
+---
 ## [Problem 2.24: Tracing System Calls](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_2.24)
 
 ### Problem Statement
-In Section 2.3 (Sytsem Calls), we described a program that copies the contents of one file
+In Section 2.3 (System Calls), we described a program that copies the contents of one file
 to a destination file. This program works by first prompting the user for
 the name of the source and destination files. Write this program using
 either the POSIX or Windows API. Be sure to include all necessary error
@@ -24,6 +24,7 @@ sudo dtruss ./FileCopy
 Since Windows systems do not provide such a tool, you will have to
 trace through the Windows version of this program using a debugger.
 
+---
 ## [Problem 4.25: Estimating the value of π](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_4.25)
 
 ### Problem Statement
@@ -55,6 +56,7 @@ want to calculate π only once.
 It is worth experimenting with the number of random points generated. As a general rule, the
 greater the number of points, the closer the approximation to π.
 
+---
 
 ## _References_
 1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md)
