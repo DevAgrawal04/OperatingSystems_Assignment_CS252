@@ -1,6 +1,6 @@
 //Dev Agrawal (201ME169)
 //Problem 2.24: Tracing System Calls using strace()
-
+//Reference: https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/
 /* Importing necessary libraries */
 #include <stdio.h> // For Standard Input Output Functions
 #include <stdlib.h> // For exit()
