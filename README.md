@@ -62,4 +62,4 @@ greater the number of points, the closer the approximation to π.
 1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md)
 2. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp)
 3. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/)
-4  [Code for copying and pasting contents of a file in C](https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/)
+4. [C Code for copying and pasting contents of a file](https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/)
