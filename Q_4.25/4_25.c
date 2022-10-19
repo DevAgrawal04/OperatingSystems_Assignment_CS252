@@ -2,15 +2,13 @@
 #include <stdio.h> 
 #include <omp.h> //open multi processing
 #include <stdlib.h> //for rand() and srand()
-#include <time.h> // to provide seed for srand using timestamp
 #include <math.h> //sqrt and pow
 
-/*Defining number of points*/
-#define NUM_COUNT 40000000 //4*(10**7) is the max number of iterations or total number of points
+/*Defining total number of points*/
+#define NUM_COUNT 40000000 //4*(10**7)
 
 /*Variable Declaration*/
 long int inside_circle = 0; //number of points inside the circle
-long int total = 0; //total number of points
 long int i;
 
 int main(void){
@@ -26,7 +24,6 @@ int main(void){
 
     #pragma omp parallel for reduction(+: inside_circle)
     for(i=0; i<NUM_COUNT; i++){
-        total++; 
         double x_ran = (2.0 * (1.0*rand()/RAND_MAX)) - 1; //rand()/RAND_MAX lies betweeen 0 and 1
         double y_ran = (2.0 * (1.0*rand()/RAND_MAX)) - 1; //Thus [2.0 * rand()/RAND_MAX]-1 will lie between -1 and 1
         
