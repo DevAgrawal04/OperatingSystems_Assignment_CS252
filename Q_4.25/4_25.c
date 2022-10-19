@@ -6,7 +6,7 @@
 #include <math.h> //sqrt and pow
 
 /*Defining number of points*/
-#define NUM_COUNT 40000000 //4*(10**7)
+#define NUM_COUNT 40000000 //4*(10**7) is the max number of iterations or total number of points
 
 /*Variable Declaration*/
 long int inside_circle = 0; //number of points inside the circle
@@ -38,8 +38,8 @@ int main(void){
 
         double dist = sqrt(pow(x_ran,2)+pow(y_ran,2)); //Root over x^2 + y^2 
         
-        if(dist<1.0){ //1.0 is written instead of 1 so that both are float
-            inside_circle++; //Inside Circle
+        if(dist<1.0){ //1.0 is written instead of 1 to ensure uniform data type comparison
+            inside_circle++; //Point lies inside the Circle
         } 
     }
     printf("Total = %ld\n", total);
