@@ -39,7 +39,6 @@ int main(void){
             inside_circle++; //Point lies inside the Circle
         } 
     }
-    printf("Total = %ld\n", total);
     double pi = 4 * ((double) inside_circle)/NUM_COUNT; //Number of points inside the circle divided by total.
     printf("pi = %f", pi); 
 }
