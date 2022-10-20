@@ -2,7 +2,7 @@
 #include <stdio.h> 
 #include <omp.h> //open multi processing
 #include <stdlib.h> //for rand() and srand()
-#include <math.h> //for sqrt and pow
+#include <math.h> //for sqrt() and pow()
 #include <time.h> // for time(NULL)
 
 /*Defining total number of points*/
