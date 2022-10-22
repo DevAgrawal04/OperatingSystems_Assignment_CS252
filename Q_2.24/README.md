@@ -1,4 +1,4 @@
-# Tracing System Calls using Strace 
+# <ins>Tracing System Calls using Strace</ins>
 
 ## Requirements
 - Linux Based Kernel (for strace)
@@ -40,7 +40,7 @@ Now we can export this terminal output to a file as follows:
 This saves our tabular terminal output to a file named [log_table.txt](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_2.24/log_table.txt)
 
 ---
-## System Calls Details
+## System Calls Description
 1. ### [write](https://man7.org/linux/man-pages/man2/write.2.html)
 - write to a file descriptor
 2. ### [read](https://man7.org/linux/man-pages/man2/read.2.html)
