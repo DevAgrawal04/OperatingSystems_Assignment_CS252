@@ -1,31 +1,45 @@
 # Problem 4.25 : Estimating the value of π
 
-### Problem Statement
-An interesting way of calculating π is to use a technique known as **Monte
-Carlo**, which involves randomization. This technique works as follows:
-Suppose you have a circle inscribed within a square, as shown in
-Figure 4.25. (Assume that the radius of this circle is 1.)
+## Requirements
+- GNU Compiler Collection (GCC)
+- OpenMP 
 
-• First, generate a series of random points as simple (x, y) coordinates.
-These points must fall within the Cartesian coordinates that bound
-the square. Of the total number of random points that are generated,
-some will occur within the circle.
+For installation guide, kindly refer the [References]()
 
-• Next, estimate π by performing the following calculation:
-π = 4× (number of points in circle) / (total number of points)
+---
+## Compiling the File
 
-Write a multithreaded version of this algorithm that creates a separate
-thread to generate a number of random points. The thread will count
-the number of points that occur within the circle and store that result
-in a global variable. When this thread has exited, the parent thread will
-calculate and output the estimated value of π.
-Use **OpenMP** to parallelize the generation of points. Be
-careful not to place the calculation of π in the parallel region, since you
-want to calculate π only once.
+To compile the file, run the following command:
+>  gcc -fopenmp 4_25.c -lm
 
-It is worth experimenting with the number of random points generated. As a general rule, the
-greater the number of points, the closer the approximation to π.
+Here, 4_25.c is the name of the file we're trying to compile.
+A file titled **a.out** will get created.
 
+
+Run the file using the following command:
+> time ./a.out
+
+We prefix the run command with the keyword [**time**](https://www.geeksforgeeks.org/time-command-in-linux-with-examples/#:~:text=time%20command%20in%20Linux%20is,a%20command%20when%20it%20terminates. "GeeksForGeeks") to print the runtime of the file onto the terminal.
+- <ins>‘real‘ time</ins> is the time elapsed wall clock time taken by a command to get executed, while <ins>‘user‘</ins> and <ins>‘sys‘ time</ins> are the number of CPU seconds that command uses in user and kernel mode respectively. 
+
+---
+## Achieving Synchronization 
+Multithreaded Solutions involving a shared variable (_inside_count_) can lead to race conditions. To avoid race conditions, **reduction** has been used in the solution.
+> #pragma omp parallel for **reduction(+: inside_circle)** 
+- The reduction clause specifies an operator and one or more list items.
+- For each item, a private copy is created on each thread, and is initialized appropriately for the operator.
+- After the end of the region, the original list item is updated with the values of the private copies using the specified operator. 
+##### Reference: 2.19.5.4 [Reduction Clause Documentation](https://www.openmp.org/spec-html/5.0/openmpsu107.html "openmp.org") 
+
+---
+## Thread Performance Analysis
+The variation of turnaround time of the solution with degree of parallelisation has been plotted as follows:
+
+![Time vs Degree of Parallelisation](https://media.geeksforgeeks.org/wp-content/uploads/MonteCarlo.png) 
+
+##### (Kindly note that this graph is for representation purposes only, and the values are subject to change as the performance mainly depends on how the tasks are divided among the threads, which is handled internally by OpenMP.) 
+
+---
 ## Additional Hardware Information
 
 ### Kernel Version
@@ -46,7 +60,17 @@ Kernel version can be found using the following command in linux based terminals
 
 ---
 ## References
-1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md)
-2. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp)
-3. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/  "GeeksForGeeks")
-4. [Reduction Clauses and Directives](https://www.openmp.org/spec-html/5.0/openmpsu107.html "OpenMP Reduction Documentation")
+1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md "GitHub")
+2. [OpenMP and GCC Instalation Guide](https://www.geeksforgeeks.org/openmp-introduction-with-installation-guide/ "GeeksForGeeks")
+3. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp "CodeReview")
+4. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/  "GeeksForGeeks")
+5. [2.19.5.4 _reduction_ Clause](https://www.openmp.org/spec-html/5.0/openmpsu107.html "OpenMP Reduction Documentation") 
+6. [Time command in Linux with examples](https://www.geeksforgeeks.org/time-command-in-linux-with-examples/#:~:text=time%20command%20in%20Linux%20is,a%20command%20when%20it%20terminates. "GeeksForGeeks")
+
+---
+## Author
+[Dev Agrawal](https://github.com/DevAgrawal04 "GitHub")
+
+- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/)
+  
+For any queries or feedback, please feel free to reach out.

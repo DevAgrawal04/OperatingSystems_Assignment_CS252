@@ -103,3 +103,11 @@ Kernel version can be found using the following command in linux based terminals
 4. [getpid() documentation](https://man7.org/linux/man-pages/man2/getppid.2.html "GeeksForGeeks")
 5. [System Calls Documentation](https://man7.org/linux/man-pages/man2/syscalls.2.html "man7.org") 
 6. [OpenMP and GCC Instalation Guide](https://www.geeksforgeeks.org/openmp-introduction-with-installation-guide/ "GeeksForGeeks")
+
+---
+## Author
+[Dev Agrawal](https://github.com/DevAgrawal04 "GitHub")
+
+- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/)
+  
+For any queries or feedback, please feel free to reach out.
