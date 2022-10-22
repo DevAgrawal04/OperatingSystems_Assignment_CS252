@@ -46,9 +46,7 @@ Kernel version can be found using the following command in linux based terminals
 
 ---
 ## References
-1. [C Code for copying and pasting contents of a file](https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/ "GeeksForGeeks")
-2. Copy File Contents - [Sonnets by Shakespeare](https://github.com/brunoklein99/deep-learning-notes/blob/master/shakespeare.txt "Github Deep Learning Repo")
-3. [Strace commands in Linux](https://www.geeksforgeeks.org/strace-command-in-linux-with-examples/ "GeeksForGeeks")
-4. [getpid() documentation](https://man7.org/linux/man-pages/man2/getppid.2.html "GeeksForGeeks")
-5. [System Calls Documentation](https://man7.org/linux/man-pages/man2/syscalls.2.html "man7.org") 
-6. [OpenMP and GCC Instalation Guide](https://www.geeksforgeeks.org/openmp-introduction-with-installation-guide/ "GeeksForGeeks")
+1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md)
+2. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp)
+3. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/  "GeeksForGeeks")
+4. [Reduction Clauses and Directives](https://www.openmp.org/spec-html/5.0/openmpsu107.html "OpenMP Reduction Documentation")
