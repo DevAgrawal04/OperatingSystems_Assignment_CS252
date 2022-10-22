@@ -35,7 +35,7 @@ Multithreaded Solutions involving a shared variable (_inside_count_) can lead to
 ## Thread Performance Analysis
 The variation of turnaround time of the solution with degree of parallelisation has been plotted as follows:
 
-![Time vs Degree of Parallelisation](https://raw.githubusercontent.com/DevAgrawal04/OperatingSystems_Assignment_CS252/main/Q_4.25/Thread%20Performance%20Graph.jpeg?token=GHSAT0AAAAAABZYIVALNRQEI6TGZSLG2MNCY2UFMUA "Thread Performance Analysis Graph") 
+![Time vs Degree of Parallelisation](./Thread%20Performance%20Graph.jpeg) 
 
 ##### (Kindly note that this graph is for representation purposes only, and the values are subject to change as the performance mainly depends on how the tasks are divided among the threads, which is handled internally by OpenMP.) 
 
