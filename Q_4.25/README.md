@@ -4,7 +4,7 @@
 - GNU Compiler Collection (GCC)
 - OpenMP 
 
-For installation guide, kindly refer the [References]()
+For installation guide, kindly refer the [References](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_4.25#references)
 
 ---
 ## Compiling the File
@@ -35,7 +35,7 @@ Multithreaded Solutions involving a shared variable (_inside_count_) can lead to
 ## Thread Performance Analysis
 The variation of turnaround time of the solution with degree of parallelisation has been plotted as follows:
 
-![Time vs Degree of Parallelisation](https://media.geeksforgeeks.org/wp-content/uploads/MonteCarlo.png) 
+![Time vs Degree of Parallelisation](https://raw.githubusercontent.com/DevAgrawal04/OperatingSystems_Assignment_CS252/main/Q_4.25/Thread%20Performance%20Graph.png?token=GHSAT0AAAAAABZYIVALJ2Y6E3OMFRR2ZAIMY2UFEMA "Thread Performance Analysis Graph") 
 
 ##### (Kindly note that this graph is for representation purposes only, and the values are subject to change as the performance mainly depends on how the tasks are divided among the threads, which is handled internally by OpenMP.) 
 
@@ -71,6 +71,6 @@ Kernel version can be found using the following command in linux based terminals
 ## Author
 [Dev Agrawal](https://github.com/DevAgrawal04 "GitHub")
 
-- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/)
+- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/ "dev-agrawal-04")
   
 For any queries or feedback, please feel free to reach out.

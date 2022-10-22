@@ -98,7 +98,7 @@ Kernel version can be found using the following command in linux based terminals
 ---
 ## References
 1. [C Code for copying and pasting contents of a file](https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/ "GeeksForGeeks")
-2. Copy File Contents - [Sonnets by Shakespeare](https://github.com/brunoklein99/deep-learning-notes/blob/master/shakespeare.txt "Github Deep Learning Repo")
+2. Copy File Contents - [Constitution of India](https://legislative.gov.in/constitution-of-india "legislative.gov.in")
 3. [Strace commands in Linux](https://www.geeksforgeeks.org/strace-command-in-linux-with-examples/ "GeeksForGeeks")
 4. [getpid() documentation](https://man7.org/linux/man-pages/man2/getppid.2.html "GeeksForGeeks")
 5. [System Calls Documentation](https://man7.org/linux/man-pages/man2/syscalls.2.html "man7.org") 
@@ -108,6 +108,6 @@ Kernel version can be found using the following command in linux based terminals
 ## Author
 [Dev Agrawal](https://github.com/DevAgrawal04 "GitHub")
 
-- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/)
+- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/ "dev-agrawal-04")
   
 For any queries or feedback, please feel free to reach out.
