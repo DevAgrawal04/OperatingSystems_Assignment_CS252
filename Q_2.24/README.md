@@ -1,4 +1,4 @@
-# Tracing System Calls using Strace
+# <u>Tracing System Calls using Strace</u>
 
 ## Requirements
 - Linux Based Kernel (for strace)
