@@ -1,4 +1,4 @@
-# CS252 Operating Systems Assignment
+# <ins>CS252 Operating Systems Assignment</ins>
 This repository contains solutions of Problem 2.24 and 4.25 from the textbook **Operating System Concepts 10th Edition** by _Abraham Silberschatz, Peter Baer Galvin and Greg Gagne_. 
 - Name: Dev Agrawal 
 - Roll No: 201ME169
