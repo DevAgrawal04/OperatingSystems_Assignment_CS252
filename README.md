@@ -1,4 +1,4 @@
-# <ins>CS252 Operating Systems Assignment</ins>
+# CS252 Operating Systems Assignment
 This repository contains solutions of Problem 2.24 and 4.25 from the textbook **Operating System Concepts 10th Edition** by _Abraham Silberschatz, Peter Baer Galvin and Greg Gagne_. 
 - Name: Dev Agrawal 
 - Roll No: 201ME169
@@ -59,7 +59,23 @@ greater the number of points, the closer the approximation to π.
 ---
 
 ## _References_
-1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md)
-2. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp)
-3. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/)
-4. [C Code for copying and pasting contents of a file](https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/)
+1. [Open MP Documentation](https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md "GitHub")
+2. [Calculating pi with Monte Carlo using OpenMP by Codereview](https://codereview.stackexchange.com/questions/256274/calculating-pi-with-monte-carlo-using-openmp "CodeReview")
+3. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/ "GeeksForGeeks")
+4. [C Code for copying and pasting contents of a file](https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/ "GeeksForGeeks")
+5. Copy File Contents - [Constitution of India](https://legislative.gov.in/constitution-of-india "legislative.gov.in")
+1. [Strace commands in Linux](https://www.geeksforgeeks.org/strace-command-in-linux-with-examples/ "GeeksForGeeks")
+6. [getpid() documentation](https://man7.org/linux/man-pages/man2/getppid.2.html "GeeksForGeeks")
+7. [System Calls Documentation](https://man7.org/linux/man-pages/man2/syscalls.2.html "man7.org") 
+8. [Linux Documentation](https://linux.die.net/ "linux.die.net") 
+9. [OpenMP and GCC Instalation Guide](https://www.geeksforgeeks.org/openmp-introduction-with-installation-guide/ "GeeksForGeeks")
+5. [2.19.5.4 _reduction_ Clause](https://www.openmp.org/spec-html/5.0/openmpsu107.html "OpenMP Reduction Documentation") 
+6. [Time command in Linux with examples](https://www.geeksforgeeks.org/time-command-in-linux-with-examples/#:~:text=time%20command%20in%20Linux%20is,a%20command%20when%20it%20terminates. "GeeksForGeeks")
+
+---
+## Author
+[@DevAgrawal04](https://github.com/DevAgrawal04 "GitHub")
+
+- [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/ "dev-agrawal-04")
+  
+For any queries or feedback, please feel free to reach out.

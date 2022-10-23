@@ -1,4 +1,4 @@
-# <ins>Tracing System Calls using Strace</ins>
+# Tracing System Calls using Strace
 
 ## Requirements
 - Linux Based Kernel (for strace)
@@ -107,7 +107,7 @@ Kernel version can be found using the following command in linux based terminals
 
 ---
 ## Author
-[Dev Agrawal](https://github.com/DevAgrawal04 "GitHub")
+[@DevAgrawal04](https://github.com/DevAgrawal04 "GitHub")
 
 - [LinkedIn](https://www.linkedin.com/in/dev-agrawal-04/ "dev-agrawal-04")
   
