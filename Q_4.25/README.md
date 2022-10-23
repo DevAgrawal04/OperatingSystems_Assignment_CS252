@@ -12,8 +12,11 @@ For installation guide, kindly refer the [References](https://github.com/DevAgra
 To compile the file, run the following command:
 >  gcc -fopenmp 4_25.c -lm
 
+We use _-lm_ when the math library isn't linked with our binary by default.
+
 Here, 4_25.c is the name of the file we're trying to compile.
-A file titled **a.out** will get created.
+
+A file titled **a.out** (assembler output) will get created.
 
 
 Run the file using the following command:
