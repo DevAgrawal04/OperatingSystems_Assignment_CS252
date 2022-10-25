@@ -36,9 +36,19 @@ Multithreaded Solutions involving a shared variable (_inside_count_) can lead to
 
 ---
 ## Thread Performance Analysis
-The variation of turnaround time of the solution with degree of parallelisation has been plotted as follows:
+The variation of turnaround time of the solution with degree of parallelisation for different implementations has been plotted as follows:
 
-![Time vs Degree of Parallelisation](./Thread%20Performance%20Graph.jpeg) 
+![Time vs Degree of Parallelisation for rand()](./Thread%20Performance%20Graph%20rand().jpeg) 
+
+rand() function isn't thread safe in linux, thus rand_r() function is used for generating random numbers.
+
+![Time vs Degree of Parallelisation for rand()](./Thread%20Performance%20Graph%20rand_r().jpeg) 
+
+The files for the above implementations are as follows:
+- [Solution implementation using rand()]( https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_4.25/4_25_rand.c"4_25_rand.c")
+- [Solution implementation using rand_r()](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_4.25/4_25.c "4_25.c")
+
+For further information on rand_r(), kindly refer the [References](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_4.25#references)
 
 ##### (Kindly note that this graph is for representation purposes only, and the values are subject to change as the performance mainly depends on how the tasks are divided among the threads, which is handled internally by OpenMP.) 
 
@@ -69,6 +79,7 @@ Kernel version can be found using the following command in linux based terminals
 4. [Estimating the value of Pi using Monte Carlo](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/  "GeeksForGeeks")
 5. [2.19.5.4 _reduction_ Clause](https://www.openmp.org/spec-html/5.0/openmpsu107.html "OpenMP Reduction Documentation") 
 6. [Time command in Linux with examples](https://www.geeksforgeeks.org/time-command-in-linux-with-examples/#:~:text=time%20command%20in%20Linux%20is,a%20command%20when%20it%20terminates. "GeeksForGeeks")
+7. [Documentation for rand_r](https://linux.die.net/man/3/rand_r "linux.die.net")
 
 ---
 ## Author
