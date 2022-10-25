@@ -42,7 +42,7 @@ some will occur within the circle.
 
 • Next, estimate π by performing the following calculation:
 π = 4 × (number of points in circle) / (total number of points)
-- (Reason: Area of Square / Area of circle = (2r)<sup>2</sup>/πr<sup>2</sup>  = π/4)
+- (Reason: Area of Square / Area of circle = (2r)<sup>2</sup>/πr<sup>2</sup>  = 4/π)
 
 Write a multithreaded version of this algorithm that creates a separate
 thread to generate a number of random points. The thread will count
