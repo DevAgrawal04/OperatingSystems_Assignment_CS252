@@ -4,12 +4,12 @@
 /*Importing necessary libraries*/
 #include <stdio.h> 
 #include <omp.h> //open multi processing
-#include <stdlib.h> //for rand() and srand()
+#include <stdlib.h> //for rand_r()
 #include <math.h> //for sqrt() and pow()
 #include <time.h> // for time(NULL)
 
 /*Defining total number of points*/
-#define NUM_COUNT 40000000 //4*(10**7)
+#define NUM_COUNT 400000000 //4*(10**8)
 
 /*Variable Declaration*/
 long int inside_circle = 0; //number of points inside the circle
@@ -20,21 +20,18 @@ int main(void){
     printf("Please enter the number of threads to be used: ");
     scanf("%d",&threads);
     /*
-    srand means set seed for rand, so we need to call srand() before rand().
-    Best practice is to call srand() once at the beginning, to ensure it's truly random.    
-    Any other value for the seed produces a different sequence.
-    srand(time(NULL)); makes use of the computer's internal clock to control the choice of the seed.
-    Since time is continually changing, the seed is forever changing.
+    To assign truly unique seeds to all the threads, we use the current timestamp, and increment the thread number to it.
+    Also, we use rand_r() because rand_r() is thread safe in linux, whereas rand() isn't.
     */
-    srand(time(NULL)); 
+    unsigned int seed = time(NULL) + omp_get_thread_num();
 
     #pragma omp parallel for num_threads(threads) reduction(+: inside_circle)
     for(i=0; i<NUM_COUNT; i++){
-        double x_ran = (2.0 * (1.0*rand()/RAND_MAX)) - 1; //rand()/RAND_MAX lies betweeen 0 and 1
-        double y_ran = (2.0 * (1.0*rand()/RAND_MAX)) - 1; //Thus [2.0 * rand()/RAND_MAX]-1 will lie between -1 and 1
+        double x_ran = (2.0 * (1.0*rand_r(&seed)/RAND_MAX)) - 1; //rand()/RAND_MAX lies betweeen 0 and 1
+        double y_ran = (2.0 * (1.0*rand_r(&seed)/RAND_MAX)) - 1; //Thus [2.0 * rand()/RAND_MAX]-1 will lie between -1 and 1
         
         /*
-        rand() is always positive ranging from 0 to RAND_MAX, 
+        rand_r() is always positive ranging from 0 to RAND_MAX, 
         thus by the above equations,
         we obtain a point whose x and y coordinates lie between -1 and 1
         */
