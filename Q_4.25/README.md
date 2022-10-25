@@ -42,6 +42,8 @@ The variation of turnaround time of the solution with degree of parallelisation 
 
 rand() function isn't thread safe in linux, thus rand_r() function is used for generating random numbers.
 
+Here, we can also notice that we are now able to run 10x more iterations in the same duration compared to rand(). Also, parallel implementation is faster than serial implementation when using rand_r().
+
 ![Time vs Degree of Parallelisation for rand()](./Thread%20Performance%20Graph%20rand_r().jpeg) 
 
 The files for the above implementations are as follows:
