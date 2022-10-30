@@ -47,7 +47,7 @@ Here, we can also notice that we are now able to run 10x more iterations in the 
 ![Time vs Degree of Parallelisation for rand()](./Thread%20Performance%20Graph%20rand_r().jpeg) 
 
 The files for the above implementations are as follows:
-- [Solution implementation using rand()]( https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_4.25/4_25_rand.c"4_25_rand.c")
+- [Solution implementation using rand()]( https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_4.25/4_25_rand.c "4_25_rand.c")
 - [Solution implementation using rand_r()](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_4.25/4_25.c "4_25.c")
 
 For further information on rand_r(), kindly refer the [References](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/tree/main/Q_4.25#references)
